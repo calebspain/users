@@ -1,0 +1,9 @@
+<button (click)="getUsers()">Get Users</button>
+<button (click)="sortUsers()">Sort Users By Name</button>
+<div class="cards-container">
+  <div class="card" *ngFor="let user of users">
+    <p>Name: {{ user.name }}</p>
+    <p>Gender: {{ user.gender }}</p>
+    <p>Region: {{ user.region }}</p>
+  </div>
+</div>
